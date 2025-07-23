@@ -24,3 +24,6 @@ Wizualizacja pozwala zrozumieć, które zapytania są blisko głównego tematu (
 Zainstaluj zależności:
 
 pip install -r requirements.txt
+
+Uruchamiaj po kolei pliki 1,2,3.py - jeśli masz ochotę wrzuć je jako pipeline poprzez np. orkiestrator main.py
+
