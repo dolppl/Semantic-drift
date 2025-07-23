@@ -1,6 +1,6 @@
 # Semantic Drift – analiza rozrzutu semantycznego fraz kluczowych
 
-Ten projekt pokazuje, jak zmierzyć **rozrzut semantyczny fraz** wygenerowanych z Google Suggest, na przykładzie hasła „kredyt hipoteczny”.
+Ten projekt pokazuje jak zmierzyć **rozrzut semantyczny fraz** wygenerowanych z Google Autocomplete, na przykładzie hasła „kredyt hipoteczny”.
 
 Wizualizacja pozwala zrozumieć, które zapytania są blisko głównego tematu (core), a które zaczynają **dryfować semantycznie** (drift), co jest szczególnie przydatne w SEO, NLP i analizie intencji użytkowników.
 
