@@ -19,7 +19,7 @@ Wizualizacja pozwala zrozumieć, które zapytania są blisko głównego tematu (
 
 ---
 
-## ⚙Jak uruchomić
+## Jak uruchomić
 
 Zainstaluj zależności:
 
