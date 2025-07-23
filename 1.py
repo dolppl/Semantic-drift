@@ -17,7 +17,7 @@ def expand_suggestions(base_keyword):
     
     for letter in string.ascii_lowercase + " ąćęłńóśźż":
         new_keyword = f"{base_keyword} {letter}"
-        print(f"🔄 Sprawdzam: {new_keyword}...")
+        print(f"Sprawdzam: {new_keyword}...")
         suggestions = get_google_suggest(new_keyword)
         all_suggestions.update(suggestions)
         time.sleep(0.5)
@@ -25,7 +25,7 @@ def expand_suggestions(base_keyword):
     for letter1 in string.ascii_lowercase:
         for letter2 in string.ascii_lowercase:
             new_keyword = f"{base_keyword} {letter1}{letter2}"
-            print(f"🔄 Sprawdzam: {new_keyword}...")
+            print(f"Sprawdzam: {new_keyword}...")
             suggestions = get_google_suggest(new_keyword)
             all_suggestions.update(suggestions)
             time.sleep(0.5)
@@ -34,14 +34,14 @@ def expand_suggestions(base_keyword):
     
     for word in question_words:
         new_keyword = f"{word} {base_keyword}"
-        print(f"🔄 Sprawdzam: {new_keyword}...")
+        print(f"Sprawdzam: {new_keyword}...")
         suggestions = get_google_suggest(new_keyword)
         all_suggestions.update(suggestions)
         time.sleep(0.5)
         
         for letter in string.ascii_lowercase:
             new_question_keyword = f"{new_keyword} {letter}"
-            print(f"🔄 Sprawdzam: {new_question_keyword}...")
+            print(f"Sprawdzam: {new_question_keyword}...")
             suggestions = get_google_suggest(new_question_keyword)
             all_suggestions.update(suggestions)
             time.sleep(0.5)
@@ -49,12 +49,12 @@ def expand_suggestions(base_keyword):
         for letter1 in string.ascii_lowercase:
             for letter2 in string.ascii_lowercase:
                 new_question_keyword = f"{new_keyword} {letter1}{letter2}"
-                print(f"🔄 Sprawdzam: {new_question_keyword}...")
+                print(f"Sprawdzam: {new_question_keyword}...")
                 suggestions = get_google_suggest(new_question_keyword)
                 all_suggestions.update(suggestions)
                 time.sleep(0.5)
     
-    print(f"✅ Łącznie zebrano: {len(all_suggestions)} unikalnych fraz")
+    print(f"Łącznie zebrano: {len(all_suggestions)} unikalnych fraz")
     return list(all_suggestions)
 
 keyword = "kredyt hipoteczny"
